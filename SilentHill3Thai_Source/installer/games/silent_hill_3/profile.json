@@ -1,0 +1,46 @@
+{
+  "game_id": "silent_hill_3_pc",
+  "profile_id": "pc-baseline-thai-mod-1",
+  "display_name": "Silent Hill 3 PC — verified baseline",
+  "targets": {
+    "executable": {
+      "path": "sh3.exe",
+      "known_original_sha256": "8FF8F74806F55843B9BC277508B17C8926999F292C65DBE7949325087D460918",
+      "known_patched_sha256": "45976F814862C13210222656D41BD074EE6EACEC559338530D337A5FB2C4F1F4",
+      "pe": {
+        "machine": "014C",
+        "optional_magic": "010B",
+        "image_base": "00400000"
+      },
+      "patch_signatures": {
+        "font_metrics_va": "00721700",
+        "font_metrics_original": "14001E0010001800FFFFFFFF",
+        "font_metrics_patched": "0B001E0010001800FFFFFFFF",
+        "raster_lookup_va": "005FA7B5",
+        "raster_lookup_original": "0FBF048D00177200",
+        "raster_lookup_patched": "0FBF048D60FD6A00",
+        "metrics_copy_va": "006AFD60",
+        "metrics_copy_original": "000000000000000000000000",
+        "metrics_copy_patched": "14001E0010001800FFFFFFFF"
+      }
+    },
+    "messages": {
+      "path": "data/msg.arc",
+      "known_original_sha256": "B9F987CD0E995F9AF7936E679F536A7B611724916E67875A8FCC92A7D5480DD9",
+      "known_patched_sha256": "3060502498989D0F623C72D813329947DF2459771D3ED134CC9C03493EC68D95",
+      "expected_entry_count": 371,
+      "font_entry_indices": [
+        276,
+        277,
+        343
+      ],
+      "translation_path": "English (UK)"
+    },
+    "pictures": {
+      "path": "data/pic.arc",
+      "known_original_sha256": "7C7EC422315176FC84EDEB262B6E5FE5334DE82929E1C6E3D0E1E5E8440846A1",
+      "known_patched_sha256": "4B582813DEDBC6CB3FA6E9D94F3C817F36A86EC790845DCA954BBCD77D5285F6"
+    }
+  },
+  "excluded_components": []
+}
